@@ -1,10 +1,10 @@
-# Planet a parameters
-sName                     Neptune        # Body's name
+# Outer planet's parameters
+sName                     outer        # Body's name
 saModules                 spinbody       # Modules to apply, exact spelling required
 
 saOutputOrder Time DeltaT SemiMajorAxis Eccentricity SpiNBodyInc LongP SpiNBodyLongA MeanAnomaly
 # Physical Properties
-dMass                     -17.148        # Mass, negative -> Earth masses
+dMass                     -22.2          # Mass, negative -> Earth masses
 dRadius                   -3.883         # Radius, negative -> Earth radii
 dRotPeriod                -1             # Rotation period, negative -> days
 dObliquity                28.32          # Obliquity (deg)
@@ -14,9 +14,9 @@ dRadGyra                  0.5            # Radius of gyration (moment of inertia
 bUseOrbParams                    1
 
 # Orbital Properties
-dSemi                     -30.06896348  # Semi-major axis, negative -> AU
-dEcc                       0.00858587   # Eccentricity
-dInc                       1.76917      # Inclination (deg)
-dLongP                     44.97135     # Longitude of pericenter (deg)
-dLongA                     131.72169    # Longitude of ascending node (deg)
-dMeanA                     259.90868    # Mean Anomoly (deg)
+dSemi                     -2.0801    # Semi-major axis, negative -> AU
+dEcc                       0.2755    # Eccentricity
+dInc                       1.27      # Inclination (deg)
+dArggP                     51.82     # Argument of pericenter (deg)
+dLongA                     260.51    # Longitude of ascending node (deg)
+dMeanA                     6.72    # Mean Anomoly (deg)
