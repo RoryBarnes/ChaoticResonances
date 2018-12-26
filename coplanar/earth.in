@@ -1,8 +1,8 @@
-# Planet a parameters
+# Planet's parameters
 sName                     earth          # Body's name
 saModules                 spinbody       # Modules to apply, exact spelling required
 
-saOutputOrder Time DeltaT SemiMajorAxis Eccentricity SpiNBodyInc LongP SpiNBodyLongA MeanAnomaly
+saOutputOrder Time DeltaT SemiMajorAxis Eccentricity Inc LongP LongA MeanL
 # Physical Properties
 dMass                     -1.0           # Mass, negative -> Earth masses
 dRadius                   -1.0           # Radius, negative -> Earth radii
@@ -17,7 +17,7 @@ bUseOrbParams                    1
 dSemi                     -1            # Semi-major axis, negative -> AU
 dEcc                       0.149        # Eccentricity
 #dInc                      43.64        # Inclination (deg)
-dInc                       0            # Inclination (deg)
+dInc                       1e-10            # Inclination (deg)
 dArgP                      18.15        # Argument of pericenter (deg)
 dLongA                     260.51       # Longitude of ascending node (deg)
 dMeanA                     220.4        # Mean Anomaly (deg)

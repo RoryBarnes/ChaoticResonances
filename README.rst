@@ -29,7 +29,7 @@ Expected output
    :align: center
 
 
-.. figure:: ChaoticResInc.png
+.. figure:: ChaoticResInclined.png
    :width: 600px
    :align: center
 

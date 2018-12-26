@@ -1,8 +1,8 @@
 # Planet a parameters
 sName                     star               # Body's name
-saModules                 spinbody          # Modules to apply, exact spelling required
+saModules                 stellar spinbody          # Modules to apply, exact spelling required
 
-saOutputOrder Time DeltaT SemiMajorAxis Eccentricity SpiNBodyInc LongP SpiNBodyLongA MeanAnomaly TotAngMom TotOrbEnergy
+saOutputOrder Time DeltaT TotAngMom TotOrbEnergy
 # Physical Properties
 dMass                     1            # Mass, negative -> Earth masses
 dRadius                   1            # Radius, negative -> Earth radii
@@ -18,6 +18,8 @@ dRadGyra                  0.5             # Radius of gyration (moment of inerti
 #dVelYSpiNBody                   -0.08959595749457543
 #dVelZSpiNBody                   0.0
 bUseOrbParams                    1
+
+dLuminosity               -1
 
 # Orbital Properties
 dSemi                      0.0          # Semi-major axis, negative -> AU

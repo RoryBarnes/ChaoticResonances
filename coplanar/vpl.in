@@ -1,7 +1,7 @@
 # Primary input file for VPLANET
-sSystemName               SpiNBody  # System Name
+sSystemName               ChaosRes  # System Name
 bOverwrite                1               # Allow file overwrites?
-saBodyFiles               sun.in earth.in outer.in
+saBodyFiles               star.in earth.in outer.in
 sIntegrationMethod        Runge
 
 # Input/Output Units
@@ -19,6 +19,6 @@ dMinValue                 1e-10           # Minimum value of eccentricity/obliqu
 bDoForward                1               # Perform a forward evolution?
 bVarDt                    1               # Use variable timestepping?
 dEta                      .001
-dTimeStep                 0.0005           # Timestep in years
-dStopTime                 1000            # Stop time for evolution
+#dTimeStep                 0.0005           # Timestep in years
+dStopTime                 1e2            # Stop time for evolution
 dOutputTime               1          # Output timesteps (assuming in body files)
