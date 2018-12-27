@@ -55,40 +55,40 @@ jtot_inc=[0 for j in range(nlines)] # Total angular momentum, inclined
 etot_inc=[0 for j in range(nlines)] # Total energy, inclined
 
 
-starco=open('coplanar/ChaosRes.star.forward')
-earthco=open('coplanar/ChaosRes.earth.forward')
-nepco=open('coplanar/ChaosRes.outer.forward')
+#starco=open('coplanar/ChaosRes.star.forward')
+#earthco=open('coplanar/ChaosRes.earth.forward')
+#nepco=open('coplanar/ChaosRes.outer.forward')
 
 starinc=open('inclined/ChaosRes.star.forward')
 earthinc=open('inclined/ChaosRes.earth.forward')
 nepinc=open('inclined/ChaosRes.outer.forward')
 
-for line in starco:
-    words=str.split(line)
-    t[j]=float(words[0])
-    jtot_co[j]=float(words[2])
-    etot_co[j]=float(words[3])
+#for line in starco:
+#    words=str.split(line)
+#    t[j]=float(words[0])
+#    jtot_co[j]=float(words[2])
+#    etot_co[j]=float(words[3])
 
-for line in earthco:
-    words=str.split(line)
-    earth_a_co[j]=float(words[2])
-    earth_e_co[j]=float(words[3])
-    earth_i_co[j]=float(words[4])
-    earth_p_co[j]=float(words[5])
-    earth_n_co[j]=float(words[6])
-    earth_l_co[j]=float(words[7])
-    earth_instell_co[j]=float(words[8])
+#for line in earthco:
+#    words=str.split(line)
+#    earth_a_co[j]=float(words[2])
+#    earth_e_co[j]=float(words[3])
+#    earth_i_co[j]=float(words[4])
+#    earth_p_co[j]=float(words[5])
+#    earth_n_co[j]=float(words[6])
+#    earth_l_co[j]=float(words[7])
+#    earth_instell_co[j]=float(words[8])
 
-for line in outerco:
-    words=str.split(line)
-    outer_a_co[j]=float(words[2])
-    outer_e_co[j]=float(words[3])
-    outer_i_co[j]=float(words[4])
-    outer_p_co[j]=float(words[5])
-    outer_n_co[j]=float(words[6])
-    outer_l_co[j]=float(words[7])
+#for line in outerco:
+#    words=str.split(line)
+#    outer_a_co[j]=float(words[2])
+#    outer_e_co[j]=float(words[3])
+#    outer_i_co[j]=float(words[4])
+#    outer_p_co[j]=float(words[5])
+#    outer_n_co[j]=float(words[6])
+#    outer_l_co[j]=float(words[7])
 
-print('Read coplanar.')
+#print('Read coplanar.')
 
 for line in starinc:
     words=str.split(line)
@@ -117,42 +117,42 @@ for line in outerinc:
 print('Read inclined.')
 
 # First is coplanar
-f, ax = plt.subplots(3,2,figsize=(6.5,9))
+#f, ax = plt.subplots(3,2,figsize=(6.5,9))
 
 # Semi-major axis
-plt.subplot(1,1,1)
-earth_a_co=(earth_a_co/earth_a_co[0]-1)
-plt.plot(Time,earth_a_co)
-outer_a_co=(outer_a_co/outer_a_co[0]-1)
-plt.plot(Time,outer_a_co,'-')
-plt.ylabel(r'$(\Delta a / a - 1)$', fontsize=16)
+#plt.subplot(1,1,1)
+#earth_a_co=(earth_a_co/earth_a_co[0]-1)
+#plt.plot(Time,earth_a_co)
+#outer_a_co=(outer_a_co/outer_a_co[0]-1)
+#plt.plot(Time,outer_a_co,'-')
+#plt.ylabel(r'$(\Delta a / a - 1)$', fontsize=16)
 
 # Eccentricity
-plt.subplot(2,1,2)
-plt.plot(Time,earth_e_co)
-plt.plot(Time,outer_e_co,'-')
-plt.xlabel('Time (yr)', fontsize=16)
-plt.ylabel('Eccentricity', fontsize=16)
+#plt.subplot(2,1,2)
+#plt.plot(Time,earth_e_co)
+#plt.plot(Time,outer_e_co,'-')
+#plt.xlabel('Time (yr)', fontsize=16)
+#plt.ylabel('Eccentricity', fontsize=16)
 
 # Inclination
-plt.subplot(1,2,2)
-plt.plot(Time,earth_i_co)
-plt.plot(Time,outer_i_co,'-')
-plt.xlabel('Time (yr)', fontsize=16)
-plt.ylabel(r'Inclination ($^\circ$)', fontsize=16)
+#plt.subplot(1,2,2)
+#plt.plot(Time,earth_i_co)
+#plt.plot(Time,outer_i_co,'-')
+#plt.xlabel('Time (yr)', fontsize=16)
+#plt.ylabel(r'Inclination ($^\circ$)', fontsize=16)
 
 # Conjunction Longitude
-plt.subplot(2,2,2)
-plt.plot(Time,(3*outer_l_co - earth_l_co))
-plt.xlabel('Time (yr)', fontsize=16)
-plt.ylabel(r'Conjunction Long.) ($^\circ$)', fontsize=16)
+#plt.subplot(2,2,2)
+#plt.plot(Time,(3*outer_l_co - earth_l_co))
+#plt.xlabel('Time (yr)', fontsize=16)
+#plt.ylabel(r'Conjunction Long.) ($^\circ$)', fontsize=16)
 
 # Resonant Argument
-plt.subplot(3,1,2)
-plt.plot(Time,(3*outer_l_co - earth_l_co - 2*earth_p_co))
-plt.plot(Time,(3*outer_l_co - earth_l_co - 2*outer_p_co),'r')
-plt.xlabel('Time (yr)', fontsize=16)
-plt.ylabel(r'Res. Arg.) ($^\circ$)', fontsize=16)
+#plt.subplot(3,1,2)
+#plt.plot(Time,(3*outer_l_co - earth_l_co - 2*earth_p_co))
+#plt.plot(Time,(3*outer_l_co - earth_l_co - 2*outer_p_co),'r')
+#plt.xlabel('Time (yr)', fontsize=16)
+#plt.ylabel(r'Res. Arg.) ($^\circ$)', fontsize=16)
 
 # Instellation
 plt.subplot(3,2,2)
