@@ -1,6 +1,6 @@
 # Planet a parameters
 sName                     star               # Body's name
-saModules                 spinbody          # Modules to apply, exact spelling required
+saModules                 stellar spinbody          # Modules to apply, exact spelling required
 
 saOutputOrder Time TotAngMom TotOrbEnergy
 # Physical Properties
@@ -9,6 +9,10 @@ dRadius                   1            # Radius, negative -> Earth radii
 dRotPeriod                -10             # Rotation period, negative -> days
 dObliquity                23.5            # Obliquity (deg)
 dRadGyra                  0.5             # Radius of gyration (moment of inertia constant)
+
+# STELLAR Properties (from van Grootel et al. [2018])
+dLuminosity             -1     # Negative for solar units
+sStellarModel 		None   # No stellar evolution
 
 # SpiNBody Properties
 #dPositionXSpiNBody              -4.49e5
