@@ -28,7 +28,7 @@ To run this example
 Expected output
 ---------------
 
-.. figure:: ChaoticRes.png
+.. figure:: ChaosRes.png
    :width: 600px
    :align: center
 
