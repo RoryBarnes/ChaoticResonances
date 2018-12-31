@@ -5,7 +5,7 @@ Overview
 --------
 
 Orbital evolution of System U in `Barnes et al (2015) <http://adsabs.harvard.edu/abs/2015ApJ...801..101B>`_
-as predicted by `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_.
+(see Fig. 13) as predicted by `vplanet <https://github.com/VirtualPlanetaryLaboratory/vplanet>`_.
 
 ===================   ============
 **Date**              12/20/18
