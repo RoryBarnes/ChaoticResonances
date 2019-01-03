@@ -37,10 +37,9 @@ by about 0.5% every 1000 years. (Note the x-axis scale is different for this pan
 *Top Right:* The eccentricity evolution of both planets, inner in black, outer in blue.
 The inner planet's eccentricity exceeds 0.99 in several instances. *Middle Left:*
 The inner planet's inclination can grow larger than 160 deg. *Middle Right:* The two
-resonant arguments show complicated behavior with circulation on long timescales,
-but libration with large amplitude on shorter timescales. *Bottom Right:* Intellation
+eccentricity-resonance arguments show complicated behavior, with high amplitude libration on short timescales, but circulation on longer timescales. *Bottom Right:* Intellation
 of the inner planet. Although typically around the Earth's solar constant of 1366
-W/m^2, but increases of a factor of 30 are possible during epochs of high eccentricity.
+W/m^2, increases over a factor of 30 are possible during epochs of star-grazingly-high eccentricity.
 *Bottom Right:* Energy (orange) and angular momentum (purple) are conserved to high
 precision in this run. The slow drifts are typical of the 4th order Runge-Kutta scheme
 in vplanet.
