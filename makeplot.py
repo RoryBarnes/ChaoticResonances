@@ -127,7 +127,7 @@ axes[2,1].set_xlim(time.min(),time.max())
 axes[2,1].set_ylim(-1.1,1.11)
 axes[2,1].legend(loc='best',fontsize=12)
 axes[2,1].set_xlabel("Time [Myr]")
-axes[2,1].set_ylabel(r"$\Delta$ E,  $\Delta$ J")
+axes[2,1].set_ylabel(r"$\Delta$E,  $\Delta$J")
 axes[2,1].set_xticks([0, 0.25, 0.5, 0.75, 1])
 axes[2,1].set_xticklabels(["0", "0.25", "0.5","0.75", "1"])
 
